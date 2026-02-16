@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.4.0">
   <diagram name="Page-1" id="mRFc-9FLJX5sN9qxnG8D">
-    <mxGraphModel dx="1559" dy="1524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1855" dy="1700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -214,9 +214,6 @@
             <mxPoint x="308.37" y="730" as="sourcePoint" />
             <mxPoint x="458.3699999999999" y="660" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="Yk6AdBZOxyHUmIxfJm28-1" edge="1" parent="1" source="mlJpAkAm-atrWVoFrQEq-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="mlJpAkAm-atrWVoFrQEq-85" value="">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mlJpAkAm-atrWVoFrQEq-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" value="payment_status" vertex="1">
           <mxGeometry height="40" width="99.24" x="410" y="763.5" as="geometry" />
