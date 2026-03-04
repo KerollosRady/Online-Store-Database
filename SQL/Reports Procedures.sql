@@ -1,14 +1,14 @@
--- 1) Total sales
--- 2) Best-selling products
--- 3) Customers with the highest purchase activity
--- 4) Products with low stock levels
+-- 1. Total sales
+-- 2. Best-selling products
+-- 3. Customers with the highest purchase activity
+-- 4. Products with low stock levels
 
 USE onlineStoreDB
 GO
 
 
--- 1) Total sales
-CREATE PROCEDURE sp_TotalSalesPeriod
+-- 1. Total sales
+CREATE PROCEDURE sp_TotalSales
     @start_date DATETIME,
     @end_date DATETIME
 AS
@@ -28,8 +28,8 @@ END;
 GO
 
 
--- 2) Best-selling products
-CREATE PROCEDURE sp_BestSellingProductsPeriod
+-- 2. Best-selling products
+CREATE PROCEDURE sp_BestSellingProducts
     @start_date DATETIME,
     @end_date DATETIME,
     @top_count INT
@@ -53,7 +53,7 @@ END;
 GO
 
 
--- 3) Customers with the highest purchase activity
+-- 3. Customers with the highest purchase activity
 CREATE PROCEDURE sp_TopActiveCustomers
     @start_date DATETIME,
     @end_date DATETIME,
@@ -80,7 +80,7 @@ END;
 GO
 
 
--- 4) Products with low stock levels
+-- 4. Products with low stock levels
 CREATE PROCEDURE sp_LowStockProducts
     @top_count INT
 AS
@@ -96,8 +96,3 @@ BEGIN
     ORDER BY stock_quantity;
 END;
 GO
-
-EXEC sp_TotalSalesPeriod '2026-01-01 08:00', '2026-02-20 18:30';
-EXEC sp_BestSellingProductsPeriod '2026-01-01 08:00', '2026-02-20 18:30', 2;
-EXEC sp_TopActiveCustomers '2026-01-01 08:00', '2026-02-20 18:30', 2;
-EXEC sp_LowStockProducts 10;
